@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  local:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    command: ./run
+    volumes:
+      - .:/usr/src/app
